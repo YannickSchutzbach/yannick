@@ -8,6 +8,8 @@ import { MainComponent } from './components/main/main.component';
 import { AlbumsComponent } from './components/albums/albums.component';
 import { PostsComponent } from './components/posts/posts.component';
 import { PhotosComponent } from './components/photos/photos.component';
+import { WeatherComponent } from './components/weather/weather.component';
+
 
 @NgModule({
   declarations: [
@@ -15,12 +17,14 @@ import { PhotosComponent } from './components/photos/photos.component';
     MainComponent,
     AlbumsComponent,
     PostsComponent,
-    PhotosComponent
+    PhotosComponent,
+    WeatherComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
