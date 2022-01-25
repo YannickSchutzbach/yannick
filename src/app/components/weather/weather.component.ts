@@ -13,7 +13,7 @@ export class WeatherComponent implements OnInit {
 
 
   constructor(
-    private weatherService: WeatherService
+    public weatherService: WeatherService
   ) { }
 
   ngOnInit(): void {
