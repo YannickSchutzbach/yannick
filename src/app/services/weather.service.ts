@@ -13,6 +13,6 @@ export class WeatherService {
 
   getWeather(location: string){
     
-    return this.http.get(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=24e68aa62aee029abd3379e7151a2fee`)
+    return this.http.get(`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=24e68aa62aee029abd3379e7151a2fee`)
   }
 }
