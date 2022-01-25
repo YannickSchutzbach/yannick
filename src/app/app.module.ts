@@ -9,7 +9,12 @@ import { AlbumsComponent } from './components/albums/albums.component';
 import { PostsComponent } from './components/posts/posts.component';
 import { PhotosComponent } from './components/photos/photos.component';
 import { WeatherComponent } from './components/weather/weather.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatFormFieldControl, MatFormFieldModule} from '@angular/material/form-field';
+import { MatCardModule} from '@angular/material/card';
+import { MatDividerModule} from '@angular/material/divider';
+import { MatGridListModule} from '@angular/material/grid-list'
 
 @NgModule({
   declarations: [
@@ -24,7 +29,12 @@ import { WeatherComponent } from './components/weather/weather.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    
+    BrowserAnimationsModule,
+    MatSliderModule,
+    MatFormFieldModule,
+    MatCardModule,
+    MatDividerModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

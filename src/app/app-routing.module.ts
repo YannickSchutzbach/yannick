@@ -6,6 +6,7 @@ import { MainComponent } from './components/main/main.component';
 import { PostsComponent } from './components/posts/posts.component';
 import { PhotosComponent } from './components/photos/photos.component';
 import { WeatherComponent } from './components/weather/weather.component';
+import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 
 const routes: Routes = [
   { path:'', component: AppComponent},
@@ -22,6 +23,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [{provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: {appearance: 'fill'}}]
 })
 export class AppRoutingModule { }
