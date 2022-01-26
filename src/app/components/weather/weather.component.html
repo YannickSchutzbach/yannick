@@ -5,16 +5,15 @@
                 <mat-card-title-group>
                     <mat-card-title>
                         <h2>Weather</h2>
-                        {{this.weatherData.name}}
+                        
                     </mat-card-title>
                     <hr>
                     <mat-card-content>
                         <form>
-                            <label class="text">Insert your City:</label><br>
-                            <mat-form-field class="example-full-width" appearance="fill">
-                                <input id="city" placeholder="your city">
-                            </mat-form-field>
-                            <button (click)="weatherService.getWeather('London')" class="btn btn-primary">Click me!</button>
+                            <label class="text">Insert your City:<br>
+                                <input name="city" [(ngModel)]="location" placeholder="your city" value="{{location}}">
+                            </label>
+                            <button (click)="setLocation(location)" class="btn btn-primary">Click me!</button>
                         </form>
                     </mat-card-content>
                 </mat-card-title-group>

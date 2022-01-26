@@ -14,7 +14,8 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatFormFieldControl, MatFormFieldModule} from '@angular/material/form-field';
 import { MatCardModule} from '@angular/material/card';
 import { MatDividerModule} from '@angular/material/divider';
-import { MatGridListModule} from '@angular/material/grid-list'
+import { MatGridListModule} from '@angular/material/grid-list';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { MatGridListModule} from '@angular/material/grid-list'
     MatFormFieldModule,
     MatCardModule,
     MatDividerModule,
-    MatGridListModule
+    MatGridListModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
