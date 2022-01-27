@@ -10,7 +10,7 @@ import { AppComponent } from 'src/app/app.component';
 })
 export class WeatherComponent implements OnInit {
   public weatherData;
-  public location: string ="Frankfurt";
+  public location: string ="";
 
 
   constructor(
@@ -18,10 +18,10 @@ export class WeatherComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-     this.weatherService.getWeather(this.location).subscribe(data => {
-       this.weatherData = data;
-       console.log(this.weatherData);
-     })
+    //  this.weatherService.getWeather(this.location).subscribe(data => {
+    //    this.weatherData = data;
+    //    console.log(this.weatherData);
+    //  })
     
   }
 
