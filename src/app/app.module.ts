@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './components/main/main.component';
 import { AlbumsComponent } from './components/albums/albums.component';
-import { PostsComponent } from './components/posts/posts.component';
 import { PhotosComponent } from './components/photos/photos.component';
 import { WeatherComponent } from './components/weather/weather.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -16,15 +15,16 @@ import { MatCardModule} from '@angular/material/card';
 import { MatDividerModule} from '@angular/material/divider';
 import { MatGridListModule} from '@angular/material/grid-list';
 import { FormsModule } from '@angular/forms';
+import { APODComponent } from './components/apod/apod.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     AlbumsComponent,
-    PostsComponent,
     PhotosComponent,
-    WeatherComponent
+    WeatherComponent,
+    APODComponent
   ],
   imports: [
     BrowserModule,

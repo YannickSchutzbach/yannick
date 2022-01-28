@@ -9,4 +9,8 @@ export class PhotoOfTheDayServiceService {
   constructor(
     private http: HttpClient
   ) { }
+
+  getAPOD(){
+    return this.http.get(`https://api.nasa.gov/planetary/apod?api_key=iw9hgyEQ9KFAPwGl1f7h2ZoBu1LQVykJW4aKHw0E&hd=true`)
+  }
 }
