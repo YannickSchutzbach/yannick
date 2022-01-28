@@ -28,7 +28,6 @@ export class KanyeComponent implements OnInit {
     this.kanyeService.getQuote().subscribe(data =>{
       this.quote=data;
     });
-    // this.number = Math.round(Math.random());
     this.number = Math.round(Math.random() * (2));
   }
 
