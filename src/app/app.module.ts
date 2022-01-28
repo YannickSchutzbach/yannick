@@ -16,6 +16,7 @@ import { MatDividerModule} from '@angular/material/divider';
 import { MatGridListModule} from '@angular/material/grid-list';
 import { FormsModule } from '@angular/forms';
 import { APODComponent } from './components/apod/apod.component';
+import { KanyeComponent } from './components/kanye/kanye.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { APODComponent } from './components/apod/apod.component';
     AlbumsComponent,
     PhotosComponent,
     WeatherComponent,
-    APODComponent
+    APODComponent,
+    KanyeComponent
   ],
   imports: [
     BrowserModule,

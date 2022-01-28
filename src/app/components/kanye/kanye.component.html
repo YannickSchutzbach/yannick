@@ -1,0 +1,27 @@
+<div class="container rounded">
+    <!-- <mat-grid-list cols="4" rowHeight="100px">
+        <mat-grid-tile
+            *ngFor="let tile of tiles"
+            [colspan]="tile.cols"
+            [rowspan]="tile.rows">
+          {{tile.text}}
+        </mat-grid-tile>
+      </mat-grid-list> -->
+    
+    <mat-grid-list cols="4" rowHeight="110px" id="quoteGrid">
+        <mat-grid-tile colspan="1" rowspan="1">
+            <q><em>{{this.quote.quote}}</em></q>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="2" rowspan="2">
+            Ye (born June 8, 1977), commonly known by his birth name Kanye West, is an American rapper, record producer, and fashion designer. He is regarded as one of the most influential musicians of all time. Born in Atlanta and raised in Chicago, he gained recognition as a producer for Roc-A-Fella Records in the early 2000s, producing singles for several artists and developing the "chipmunk soul" sampling style. Intent on pursuing a solo career as a rapper, he released his debut studio album, The College Dropout (2004), to critical and commercial success, and founded the record label GOOD Music. 
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="2">
+            <img src='./assets/images/kanye{{number}}.png'>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="1">
+            <b>- Kanye West</b>
+        </mat-grid-tile>
+    </mat-grid-list>
+
+
+</div>

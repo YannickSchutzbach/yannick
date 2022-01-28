@@ -7,6 +7,7 @@ import { PhotosComponent } from './components/photos/photos.component';
 import { WeatherComponent } from './components/weather/weather.component';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 import { APODComponent } from './components/apod/apod.component';
+import { KanyeComponent } from './components/kanye/kanye.component';
 
 const routes: Routes = [
   { path:'', component: AppComponent},
@@ -17,7 +18,8 @@ const routes: Routes = [
     ]},
 
   { path:'apod', component: APODComponent},
-  { path:'weather', component: WeatherComponent}
+  { path:'weather', component: WeatherComponent},
+  { path: 'kanye', component: KanyeComponent}
 ];
 
 @NgModule({
