@@ -8,6 +8,7 @@ import { PhotoOfTheDayServiceService } from 'src/app/services/photo-of-the-day-s
 })
 export class APODComponent implements OnInit {
   photoData;
+  picture : boolean=true;
   constructor(
     private photoOfTheDayService: PhotoOfTheDayServiceService,
     
@@ -17,8 +18,10 @@ export class APODComponent implements OnInit {
     this.photoOfTheDayService.getAPOD().subscribe(data => {
       this.photoData = data;
       console.log(this.photoData);
+      if (this.photoData.media_type==="video") {
+        this.picture=false;
+      }
     })
-    console.log("APOD")
   }
 
 }
