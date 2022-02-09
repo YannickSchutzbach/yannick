@@ -1,6 +1,6 @@
 <div class="content">
     
-    <mat-grid-list cols="4"  id="quoteGrid" style="min-height: 250px;">
+    <mat-grid-list cols="4" *ngIf="!mobile" id="quoteGrid" style="min-height: 250px;" >
         <mat-grid-tile colspan="1" rowspan="1" id="quote">
             <div class="" style="text-align: center; margin-right: 10px;">
                 {{this.quote.quote}}
@@ -22,5 +22,21 @@
         </mat-grid-tile>
     </mat-grid-list>
 
+    <div *ngIf="mobile" style="margin-bottom: 15px;">
+        <p  style="text-align: center;">
+            <em>
+            {{this.quote.quote}}
+            </em>
+        </p>
+        <br><br>
+        <b>
+            - Kanye West
+        </b><br>
+        <img style="display: block; margin-left: auto; margin-right: auto;" src='./assets/images/kanye{{number}}.png'><br><br>
+        Ye (born June 8, 1977), commonly known by his birth name Kanye West, is an American rapper, record producer, and fashion
+            designer. He is regarded as one of the most influential musicians of all time. Born in Atlanta and raised in Chicago, he
+            gained recognition as a producer for Roc-A-Fella Records in the early 2000s, producing singles for several artists and
+            developing the "chipmunk soul" sampling style.
+    </div>
 
 </div>

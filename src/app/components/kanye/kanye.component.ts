@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { KanyeService } from 'src/app/services/kanye.service';
 import { MatGridList } from '@angular/material/grid-list';
 
@@ -18,7 +18,10 @@ export interface Tile {
 export class KanyeComponent implements OnInit {
   quote;
   number;
-
+  public getScreenWidth: any;
+  public getScreenHeight: any;
+  public mobile:boolean=false;
+  
   constructor(
     private kanyeService :KanyeService
   ) { }
@@ -29,6 +32,24 @@ export class KanyeComponent implements OnInit {
       this.quote=data;
     });
     this.number = Math.round(Math.random() * (2));
+    this.getScreenWidth = window.innerWidth;
+    this.getScreenHeight = window.innerHeight;
+    if (this.getScreenWidth<750) {
+      this.mobile=true;
+    }else{
+      this.mobile=false;
+    }
+  }
+  
+  @HostListener('window:resize', ['$event'])
+  onWindowResize() {
+    this.getScreenWidth = window.innerWidth;
+    this.getScreenHeight = window.innerHeight;
+    if (this.getScreenWidth<750) {
+      this.mobile=true;
+    }else{
+      this.mobile=false;
+    }
   }
 
 
