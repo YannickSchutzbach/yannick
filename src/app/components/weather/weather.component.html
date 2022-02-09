@@ -1,25 +1,32 @@
 <div class="content">
-    
 
-            <mat-grid-list cols="2">
-                <mat-card-title-group>
-                    <mat-card-title>
-                        <h2>Weather</h2>
-                        
-                    </mat-card-title>
-                    <hr>
-                    <mat-card-content>
-                        <form>
-                            <label class="text">Insert your City:<br>
-                                <input name="city" [(ngModel)]="location" placeholder="your city" value="{{location}}">
-                            </label>
-                            <button (click)="setLocation(location)" class="btn btn-primary">Click me!</button>
-                        </form>
-                    </mat-card-content>
-                </mat-card-title-group>
-            </mat-grid-list>
-       
-    <div class="row">        
+    <mat-grid-list cols="2">
+        <mat-card-title-group>
+            <mat-card-title>
+                <h2>Weather</h2>
+
+            </mat-card-title>
+            <hr>
+            <mat-card-content>
+                <form *ngIf="!mobile">
+                    <label class="text">Insert your City:<br>
+                        <input name="city" [(ngModel)]="location" placeholder="Your city" value="{{location}}">
+                    </label>
+                    <button (click)="setLocation(location)" class="btn btn-primary">Get weather!</button>
+                </form>
+
+                <form *ngIf="mobile">
+                    <label class="text">Insert your City:<br>
+                        <input name="city" [(ngModel)]="location" placeholder="Your city" value="{{location}}">
+                    </label><br><br>
+                    <button (click)="setLocation(location)" class="btn btn-primary" style="margin-left: 0;">Get weather!</button>
+                </form>
+                
+            </mat-card-content>
+        </mat-card-title-group>
+    </mat-grid-list>
+
+    <div class="row">
         <hr>
         <h3>Weather Details</h3>
 
@@ -32,5 +39,5 @@
         <p class="text-center">Pressure in hektopascal: <b>{{this.weatherData.main.pressure}}</b></p>
 
     </div>
-    
+
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { WeatherService } from 'src/app/services/weather.service';
 import { AppComponent } from 'src/app/app.component';
 
@@ -11,6 +11,9 @@ import { AppComponent } from 'src/app/app.component';
 export class WeatherComponent implements OnInit {
   public weatherData;
   public location: string ="";
+  getScreenWidth;
+  getScreenHeight;
+  mobile:boolean=false;
 
 
   constructor(
@@ -18,11 +21,13 @@ export class WeatherComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    //  this.weatherService.getWeather(this.location).subscribe(data => {
-    //    this.weatherData = data;
-    //    console.log(this.weatherData);
-    //  })
-    
+    this.getScreenWidth = window.innerWidth;
+    this.getScreenHeight = window.innerHeight;
+    if (this.getScreenWidth<750) {
+      this.mobile=true;
+    }else{
+      this.mobile=false;
+    }
   }
 
   setWeatherData(loc) {
@@ -35,4 +40,16 @@ export class WeatherComponent implements OnInit {
     event?.preventDefault();
     this.setWeatherData(loc);
   }
+
+  @HostListener('window:resize', ['$event'])
+  onWindowResize() {
+    this.getScreenWidth = window.innerWidth;
+    this.getScreenHeight = window.innerHeight;
+    if (this.getScreenWidth<750) {
+      this.mobile=true;
+    }else{
+      this.mobile=false;
+    }
+  }
+
 }
