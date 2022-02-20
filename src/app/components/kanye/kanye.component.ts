@@ -31,7 +31,8 @@ export class KanyeComponent implements OnInit {
     this.kanyeService.getQuote().subscribe(data =>{
       this.quote=data;
     });
-    this.number = Math.round(Math.random() * (2));
+    this.number = Math.round(Math.random() * (4));
+    console.log(this.number);
     this.getScreenWidth = window.innerWidth;
     this.getScreenHeight = window.innerHeight;
     if (this.getScreenWidth<750) {
@@ -51,6 +52,5 @@ export class KanyeComponent implements OnInit {
       this.mobile=false;
     }
   }
-
 
 }
