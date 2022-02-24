@@ -17,6 +17,5 @@ export class MainComponent implements OnInit {
 
   navMenuToggle(){
     this.expanded= -this.expanded;
-    console.log(this.expanded);
   }
 }

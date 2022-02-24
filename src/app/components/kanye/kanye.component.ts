@@ -32,7 +32,6 @@ export class KanyeComponent implements OnInit {
       this.quote=data;
     });
     this.number = Math.round(Math.random() * (4));
-    console.log(this.number);
     this.getScreenWidth = window.innerWidth;
     this.getScreenHeight = window.innerHeight;
     if (this.getScreenWidth<750) {

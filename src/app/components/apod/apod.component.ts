@@ -17,7 +17,6 @@ export class APODComponent implements OnInit {
   ngOnInit(): void {
     this.photoOfTheDayService.getAPOD().subscribe(data => {
       this.photoData = data;
-      console.log(this.photoData);
       if (this.photoData.media_type==="video") {
         this.picture=false;
       }
