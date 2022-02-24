@@ -3,7 +3,9 @@
     <mat-grid-list cols="4" *ngIf="!mobile" id="quoteGrid" style="min-height: 250px;" >
         <mat-grid-tile colspan="1" rowspan="1" id="quote">
             <div class="" style="text-align: center; margin-right: 10px;">
-                {{this.quote.quote}}
+                <div *ngIf="this.quote">
+                    {{this.quote.quote}}
+                </div>
                 <br><br>
                 <b>
                     - Kanye West
@@ -26,7 +28,7 @@
         <div  style="text-align: center;">
 
             <p>
-                <em>
+                <em *ngIf="this.quote">
                     {{this.quote.quote}}
                 </em>
             </p>
