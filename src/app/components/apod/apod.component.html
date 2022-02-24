@@ -1,13 +1,15 @@
 <div class="content">
-    <h3>{{photoData.title}}</h3>
+    <h3 *ngIf="this.photoData" style="text-align: center; padding-bottom: 8px; padding-top: 3px;">{{photoData.title}}</h3>
 </div>
 <div class="img" *ngIf="picture">
-        <img class="rounded-corners" src={{photoData.hdurl}}>   
+        <img *ngIf="this.photoData" class="rounded-corners" src={{photoData.hdurl}}>   
 </div>
 
 <div class="content" *ngIf="!picture" style="margin-top: 10px; margin-bottom: 10px; padding-bottom: 5px;">
-    <a href='{{photoData.url}}'>Visit YouTube to see today's video</a>
+    <a *ngIf="this.photoData" href='{{photoData.url}}'>Visit YouTube to see today's video</a>
 </div>
 <div class="content" id="foot">
-    {{photoData.explanation}}
+    <div *ngIf="this.photoData">
+        {{photoData.explanation}}
+    </div>
 </div>

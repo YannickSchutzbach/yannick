@@ -19,7 +19,7 @@
                     <label class="text">Insert your City:<br>
                         <input name="city" [(ngModel)]="location" placeholder="Your city" value="{{location}}">
                     </label><br><br>
-                    <button (click)="setLocation(location)" class="btn btn-primary" style="margin-left: 0;">Get weather!</button>
+                    <button (click)="setLocation(location)" class="btn" style="margin-left: 0; background-color:#07575B; color: #C4DFE6;">Get weather!</button>
                 </form>
                 
             </mat-card-content>
@@ -30,13 +30,13 @@
         <hr>
         <h3>Weather Details</h3>
 
-        <p class="text-center">Current weather conditions: <b>{{this.weatherData.weather[0].main}}</b></p>
-        <p class="text-center">Temperature in Degrees Celsius: <b>{{this.weatherData.main.temp}}</b></p>
-        <p class="text-center">Feels like in Degrees Celsius: <b>{{this.weatherData.main.feels_like}}</b></p>
-        <p class="text-center">Location Searched: <b>{{this.weatherData.name}}</b></p>
-        <p class="text-center">Wind speed in kilometers per second: <b>{{this.weatherData.wind.speed}}</b></p>
-        <p class="text-center">Humidity in percent: <b>{{this.weatherData.main.humidity}}</b></p>
-        <p class="text-center">Pressure in hektopascal: <b>{{this.weatherData.main.pressure}}</b></p>
+        <p class="text-center">Location Searched: <b *ngIf="this.weatherData">  {{this.weatherData.name}}</b></p>
+        <p class="text-center">Current weather conditions: <b *ngIf="this.weatherData">{{this.weatherData.weather[0].main}}</b></p>
+        <p class="text-center">Temperature in Degrees Celsius: <b *ngIf="this.weatherData">{{this.weatherData.main.temp}}</b></p>
+        <p class="text-center">Feels like in Degrees Celsius: <b *ngIf="this.weatherData">{{this.weatherData.main.feels_like}}</b></p>
+        <p class="text-center">Wind speed in kilometers per second: <b *ngIf="this.weatherData">{{this.weatherData.wind.speed}}</b></p>
+        <p class="text-center">Humidity in percent: <b *ngIf="this.weatherData">{{this.weatherData.main.humidity}}</b></p>
+        <p class="text-center">Pressure in hektopascal: <b *ngIf="this.weatherData">{{this.weatherData.main.pressure}}</b></p>
 
     </div>
 

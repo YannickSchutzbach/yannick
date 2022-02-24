@@ -34,17 +34,17 @@ $yannick-theme: mat.define-light-theme((
 @include mat.all-component-themes($yannick-theme);
 
 /* You can add global styles to this file, and also import other style files */
+
+
 .rounded {
-    border: 1px solid black;
-    background-color: cornsilk;
     padding-right: 25px;
     padding-left: 25px;
     padding-top: 5px;
 }
 .content {
     border-radius: 10px;
-    border: 1px solid black;
-    background-color: cornsilk;
+    border: 0px;
+    background-color: #C4DFE6;
     padding-right: 25px;
     padding-left: 25px;
     padding-top: 5px;
@@ -54,7 +54,7 @@ $yannick-theme: mat.define-light-theme((
 }
 
 :root, html, head, body,header{
-    background-color: #303030;
+    background-color: #003b46;
     
 }
 .navbar{
@@ -62,18 +62,6 @@ $yannick-theme: mat.define-light-theme((
 }
 .col-md-3 {
     margin-bottom: 15px;
-}
-.card:hover {
-    background-color: #007bff;
-}
-.card:hover a{
-    color:white;
-    text-decoration: none;
-}
-
-.card a:hover {
-    color: white;
-    text-decoration: none;
 }
 h4 {
     margin-top: 15px;
@@ -83,8 +71,13 @@ h4 {
     margin-bottom: 20px;
 }
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+    Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: 400;}
 
 .foot {
     height: 10px;
+}
+a {
+    color: #07575B;
+    font-weight: bold;
 }

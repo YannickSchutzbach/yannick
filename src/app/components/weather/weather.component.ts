@@ -31,10 +31,11 @@ export class WeatherComponent implements OnInit {
   }
 
   setWeatherData(loc) {
-    this.weatherService.getWeather(loc).subscribe(data => {
-      this.weatherData = data;
-      console.log(this.weatherData);
-    })}
+    this.weatherService.getWeather(loc)
+    .subscribe(
+      data => this.weatherData = data,
+      error => alert("upsi etwas ist schiefgelaufen LOL XD")
+    )}
 
   setLocation(loc){
     event?.preventDefault();
@@ -51,5 +52,4 @@ export class WeatherComponent implements OnInit {
       this.mobile=false;
     }
   }
-
 }
