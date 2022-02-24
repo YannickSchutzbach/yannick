@@ -9,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 
 export class MainComponent implements OnInit {
 
+  expanded=1;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  navMenuToggle(){
+    this.expanded= -this.expanded;
+    console.log(this.expanded);
+  }
 }
