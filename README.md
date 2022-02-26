@@ -4,15 +4,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Vision Statement
 
-![Frontpage](/VisionStatement/Frontpage Vision Statement.png)
+![Frontpage](https://github.com/YannickSchutzbach/yannick/blob/master/VisionStatement/Frontpage%20Vision%20Statement.png?raw=true)
 
-![Frontpage](/VisionStatement/Frontpage+Navbar Vision Statement.png)
+![Frontpage+Navbar](https://github.com/YannickSchutzbach/yannick/blob/master/VisionStatement/Frontpage+Navbar%20Vision%20Statement.png?raw=true)
 
-![Frontpage](https://github.com/YannickSchutzbach/yannick/blob/master/VisionStatement/APOD%20Vision%20Statement.png?raw=true)
+![APOD](https://github.com/YannickSchutzbach/yannick/blob/master/VisionStatement/APOD%20Vision%20Statement.png?raw=true)
 
-![Frontpage](/VisionStatement/Kanye Vision Statement.png)
+![Kanye](https://github.com/YannickSchutzbach/yannick/blob/master/VisionStatement/Kanye%20Vision%20Statement.png?raw=true)
 
-![Frontpage](/VisionStatement/Weather Vision Statement.png)
+![Weather](https://github.com/YannickSchutzbach/yannick/blob/master/VisionStatement/Weather%20Vision%20Statement.png?raw=true)
 
 
 ## Development server
