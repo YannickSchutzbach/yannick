@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Vision Statement
 
-![Frontpage](https://github.com/YannickSchutzbach/yannick/blob/master/VisionStatement/Frontpage%20Vision%20Statement.png?raw=true)
+<img src="https://github.com/YannickSchutzbach/yannick/blob/master/VisionStatement/Frontpage%20Vision%20Statement.png?raw=true" heigth="200px"/>
 
 ![Frontpage+Navbar](https://github.com/YannickSchutzbach/yannick/blob/master/VisionStatement/Frontpage+Navbar%20Vision%20Statement.png?raw=true)
 
