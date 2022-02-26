@@ -4,15 +4,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Vision Statement
 
-![Frontpage](VisionStatement/Frontpage Vision Statement.png)
+![Frontpage](/VisionStatement/Frontpage Vision Statement.png)
 
-![Frontpage](VisionStatement/Frontpage+Navbar Vision Statement.png)
+![Frontpage](/VisionStatement/Frontpage+Navbar Vision Statement.png)
 
-![Frontpage](VisionStatement/APOD Vision Statement.png)
+![Frontpage](/VisionStatement/APOD Vision Statement.png)
 
-![Frontpage](VisionStatement/Kanye Vision Statement.png)
+![Frontpage](/VisionStatement/Kanye Vision Statement.png)
 
-![Frontpage](VisionStatement/Weather Vision Statement.png)
+![Frontpage](/VisionStatement/Weather Vision Statement.png)
 
 
 ## Development server
